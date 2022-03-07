@@ -1,0 +1,47 @@
+main{
+    margin:0;
+    height: 100vh;
+    width: 100%;
+}
+
+.second_page{
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 33.33% 33.33% 33.33%;
+    font-family:'avenir';
+    src: url(AvenirLTStd-Black.otf);
+    font-size: 30.01pt;
+}
+
+.second_page>:nth-child(1){
+    grid-template-rows: 1/2;
+    font-weight: 200;
+    src: url(AvenirLTStd-Black.otf);
+}
+
+.middle{
+    padding-top: 10vh;
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1;
+    height: 400px;
+}
+
+.middle>:nth-child(1){
+    grid-column: 1/2;
+    font-family:'avenir';
+}
+
+.middle>:nth-child(2){
+    grid-column: 2/3;
+    align-self:baseline;
+    justify-self: end;
+    padding-top: 60%;
+}
+
+.you_image{
+    grid-row: 3/4;
+    align-self: center;
+    justify-self: center;
+    padding-top: 13vh;
+    }
